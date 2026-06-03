@@ -56,7 +56,7 @@ This project is built for a college environment with separate access for Admin, 
 ## Project Structure
 
 ```text
-Final1/
+CampusSphere/
 |-- .git/                         # Git repository metadata
 |-- .venv/                        # Local Python virtual environment
 |-- .vscode/
