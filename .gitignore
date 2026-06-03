@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment files
+.env
+backend/.env
+
+# Logs
+*.log
+
+# MongoDB
+mongodb_data/
+
+# Generated files
+generated/
+
+# VS Code
+.vscode/
+
+# Node
+node_modules/
+
+# Build
+dist/
+build/
