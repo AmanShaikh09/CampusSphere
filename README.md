@@ -465,6 +465,11 @@ Backend compile check:
 ```bash
 python -m py_compile backend\app\routes\auth.py backend\config.py
 ```
+#contact us if any query
+1)Shaikh Aman Isakh -ashaikh49096@gmail.com
+2)Choudante Apurwa -apurwachoudante05@gmail.com
+3)Shivani Bande -shivanibande10@gmail.com
+4)Akanksha Borgaonkar -akankshapsb07@gmail.com
 
 ## Important Notes
 
