@@ -12,7 +12,7 @@ export const AuthProvider = ({ children }) => {
             const token = localStorage.getItem('token');
             if (token) {
                 try {
-                    const response = await api.get('/auth/profile');
+                    const response = await api.get('/api/auth/profile');
                     setUser({
                         ...response.data,
                         token // Keep token in state if needed, but it's mainly in localStorage
@@ -29,12 +29,12 @@ export const AuthProvider = ({ children }) => {
 
     const login = async (email, password) => {
         try {
-            const response = await api.post('/auth/login', { email, password });
+            const response = await api.post('/api/auth/login', { email, password });
             const { access_token } = response.data;
             localStorage.setItem('token', access_token);
             
             // Fetch full profile after login to populate all fields
-            const profileRes = await api.get('/auth/profile');
+            const profileRes = await api.get('/api/auth/profile');
             setUser({ 
                 ...profileRes.data,
                 token: access_token 
@@ -55,7 +55,7 @@ export const AuthProvider = ({ children }) => {
         const token = localStorage.getItem('token');
         if (token) {
             try {
-                const response = await api.get('/auth/profile');
+                const response = await api.get('/api/auth/profile');
                 setUser({
                     ...response.data,
                     token
