@@ -42,7 +42,7 @@ const AdminDashboard = () => {
         const fetchSummary = async () => {
             try {
                 setLoading(true);
-                const res = await api.get('/api/dashboard/summary');
+                const res = await api.get('/dashboard/summary');
                 setStats(res.data.stats || {});
                 setChartData(res.data.charts?.students_by_department || []);
                 setActivity(res.data.activity || []);
